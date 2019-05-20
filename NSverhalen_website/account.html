@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- zorgt dat ik alle tekens kan gebruiken -->
+	<title>NS verhalen - Account</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
+</head>
+
+<body>
+
+	<header>
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">
+						<img class="nslogo" alt="nslogo" src="images/nslogo.svg">
+					</a>
+				</li>
+				<li>
+					<img class="navicoon" alt="accounticoon" src="images/search_icon.svg">
+					<a class="zoekknop" href="#">zoeken</a>
+					<div class="zoekbalk">
+						<input class="inputbar" type="search" placeholder="Ik ben op zoek naar..." name="search">
+						<div class="zoekknop_actief"></div>
+						<div class="sluiten"></div>
+						<div class="filternav">
+							<button class="filternavknop">Filter</button>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img class="navicoon" alt="accounticoon" src="images/account_icon.svg">
+					<a href="account.html">account</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- einde header -->
+
+	<main>
+		<h3 class="h3-form">Beheer je NS verhalen account</h3>
+		<form>
+			<fieldset>
+				<legend>Inloggen</legend>
+				<label>
+					E-mailadres
+					<input type="email" name="email">
+				</label>
+				<label>
+					Wachtwoord
+					<input type="text" name="wachtwoord">
+				</label>
+
+				<input class="submitbtn" type="submit" name="submit" value="login">
+			</fieldset>
+		</form>
+		<form>
+			<fieldset>
+				<legend>NS verhalen account aanmaken</legend>
+				<label>
+					E-mailadres
+					<input type="email" name="email">
+				</label>
+				<label>
+					Bevestig E-mailadres
+					<input type="email" name="email">
+				</label>
+				<label>
+					Wachtwoord
+					<input type="password" name="wachtwoord">
+				</label>
+				<label>
+					Bevestig wachtwoord
+					<input type="password" name="wachtwoord">
+				</label>
+
+				<input type="submit" name="submit" value="aanmaken">
+			</fieldset>
+		</form>
+	</main>
+
+	<!-- einde main -->
+	
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
